@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos y Contacto | Samuel Leandro González Gómez</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-bar">
+            <a href="index.html" class="brand-logo">SLGG<span>.</span></a>
+            <nav aria-label="Navegación secundaria">
+                <ul class="nav-list">
+                    <li><a href="index.html">Volver a Hoja de Vida</a></li>
+                    <li><a href="#contacto" class="btn-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section container">
+        <div class="section-heading">
+            <span class="kicker">Portafolio</span>
+            <h2>Proyectos Destacados</h2>
+            <p>Selección de trabajos académicos y soluciones técnicas.</p>
+        </div>
+
+        <div class="cards-grid">
+            <article class="info-card">
+                <h3>Automatización y Auditoría en SQL Server</h3>
+                <p>Scripts para verificación de respaldos, reportes de salud y transferencia automatizada de archivos.</p>
+            </article>
+            <article class="info-card">
+                <h3>Aplicaciones y Pruebas de Software</h3>
+                <p>Desarrollo de interfaces, estructuras de datos, pruebas de rendimiento y planes de calidad.</p>
+            </article>
+        </div>
+
+        <hr class="divider">
+
+        <section id="contacto" class="contact-box">
+            <h2>Contacto Profesional</h2>
+            <p>Envía un mensaje para oportunidades laborales, colaboraciones o consultas académicas.</p>
+
+            <form id="contactForm" class="contact-form" action="#" method="get">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="metodo">Método de envío simulado</label>
+                    <select id="metodo" name="metodo">
+                        <option value="GET">GET (consulta / parámetros en URL)</option>
+                        <option value="POST">POST (envío de datos de formulario)</option>
+                        <option value="PUT">PUT (actualización de recurso)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Enviar solicitud</button>
+            </form>
+
+            <div id="formFeedback" class="feedback-box" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p><strong>Samuel Leandro González Gómez</strong> — Bogotá, Colombia</p>
+            <a href="index.html">Inicio</a>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
